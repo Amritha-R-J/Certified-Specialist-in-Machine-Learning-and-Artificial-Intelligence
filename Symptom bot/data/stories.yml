@@ -1,0 +1,25 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: diagnosis
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: gratitude
+  - action: utter_no_problem
+  - intent: goodbye
+  - action: utter_goodbye
+  
+- story: identify_disease_and_symptoms
+  steps:
+  - intent: identify_disease_and_symptom
+  - action: action_identify_disease_from_symptom
+

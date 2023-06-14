@@ -1,0 +1,501 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: gratitude
+  examples: |
+    - Thank you
+    - Thanks a million
+    - thanks so much
+    - Great, thank you
+    
+
+- intent: identify_disease_and_symptom
+  examples: |
+    - I have [penile discharge](symptom)
+    - I have [foot redness](symptom)
+    - I have [joint stiffness](symptom)
+    - My son is suffering from [flatulence](symptom)
+    - For the last few days I have had [shin pain](symptom)
+    - My daughter is suffering from [foot cut](symptom)
+    - My husband is suffering from [rash](symptom)
+    - I don't feel well, I have [psychiatric problem](symptom)
+    - For the last few days I have had [nail injury](symptom)
+    - I have really bad [neck swelling](symptom)
+    - My symptoms are [traveler's diarrhea](symptom)
+    - My son is suffering from [bleeding in brain](symptom)
+    - I don't feel well, I have [failure to thrive](symptom)
+    - I don't feel well, I have [psychiatric problem](symptom)
+    - My symptoms are [choking](symptom)
+    - My symptoms are [agitated](symptom)
+    - My symptoms are [ankle pain](symptom)
+    - My wife is suffering from [psychiatric problem](symptom)
+    - For the last few days I have had [snake bite](symptom)
+    - My child is suffering from [mouth ulcers](symptom)
+    - For the last few days I have had [wheezing](symptom)
+    - My wife is suffering from [insect sting](symptom)
+    - For the last few days I have had [leg itching](symptom)
+    - I have really bad [mouth ulcers](symptom)
+    - My symptoms are [swollen gums](symptom)
+    - My child is suffering from [upper leg pain](symptom)
+    - I'm suffering from [hand redness](symptom)
+    - I have [chest pain](symptom)
+    - I'm suffering from [seizure](symptom)
+    - My wife is suffering from [nausea](symptom)
+    - I have really bad [upper abdominal pain](symptom)
+    - I have really bad [kidney pain](symptom)
+    - My wife is suffering from [confusion](symptom)
+    - I have [skin infection](symptom)
+    - For the last few days I have had [blister](symptom)
+    - My daughter is suffering from [urinary retention](symptom)
+    - My son is suffering from [tongue swelling](symptom)
+    - I have really bad [swollen lymph nodes](symptom)
+    - My child is suffering from [arm redness](symptom)
+    - My husband is suffering from [mouth ulcers](symptom)
+    - I don't feel well, I have [drooping eyelid](symptom)
+    - I don't feel well, I have [fever](symptom)
+    - My husband is suffering from [delusions or hallucinations](symptom)
+    - My husband is suffering from [visual problems](symptom)
+    - My child is suffering from [neck stiffness or tightness](symptom)
+    - For the last few days I have had [abdominal swelling](symptom)
+    - I'm suffering from [pregnancy problem](symptom)
+    - My son is suffering from [ear swelling](symptom)
+    - I'm suffering from [sleep disorders](symptom)
+    - My wife is suffering from [amenorrhea](symptom)
+    - I'm suffering from [agitated](symptom)
+    - My child is suffering from [darkening of the skin](symptom)
+    - My daughter is suffering from [muscle pain](symptom)
+    - For the last few days I have had [trauma](symptom)
+    - I'm suffering from [skin growths](symptom)
+    - My symptoms are [insomnia](symptom)
+    - My daughter is suffering from [eye swelling](symptom)
+    - My son is suffering from [eye swelling](symptom)
+    - I'm suffering from [armpit pain](symptom)
+    - My child is suffering from [pregnancy problem](symptom)
+    - My son is suffering from [blood in vomit](symptom)
+    - My symptoms are [dementia](symptom)
+    - My husband is suffering from [low heart rate](symptom)
+    - I'm suffering from [nausea](symptom)
+    - For the last few days I have had [calf swelling](symptom)
+    - For the last few days I have had [pain or soreness of breast](symptom)
+    - I have really bad [leg redness](symptom)
+    - For the last few days I have had [hand, finger ache or pain](symptom)
+    - I'm suffering from [dark stools](symptom)
+    - My husband is suffering from [fever](symptom)
+    - I have [toe pain](symptom)
+    - I don't feel well, I have [poisoning](symptom)
+    - I have [upper abdominal pain](symptom)
+    - My child is suffering from [cough](symptom)
+    - I have [blood in urine](symptom)
+    - My wife is suffering from [facial droop](symptom)
+    - My symptoms are [nasal bleeding](symptom)
+    - My son is suffering from [painful gums](symptom)
+    - I have [headache and weakness](symptom)
+    - My symptoms are [congestion in chest or lungs](symptom)
+    - I don't feel well, I have [stomach and abdominal pain](symptom)
+    - I don't feel well, I have [upper leg pain](symptom)
+    - My wife is suffering from [hair loss](symptom)
+    - For the last few days I have had [heel pain](symptom)
+    - I'm suffering from [hives](symptom)
+    - I don't feel well, I have [confusion and headache](symptom)
+    - My son is suffering from [skin swelling](symptom)
+    - My wife is suffering from [stings](symptom)
+    - I have really bad [obesity](symptom)
+    - My wife is suffering from [failure to thrive](symptom)
+    - I don't feel well, I have [heart murmur](symptom)
+    - I have really bad [neck swelling](symptom)
+    - My child is suffering from [confusion](symptom)
+    - My child is suffering from [mouth swelling](symptom)
+    - I have [vaginal bleeding](symptom)
+    - My symptoms are [penis pain](symptom)
+    - My symptoms are [tongue swelling](symptom)
+    - My child is suffering from [overdose](symptom)
+    - My wife is suffering from [joint stiffness](symptom)
+    - My wife is suffering from [abdominal swelling](symptom) and [drooling](symptom)
+    - My symptoms are [calf swelling](symptom) and [skin pain](symptom)
+    - I have really bad [arm cut](symptom) and [arm itching](symptom)
+    - My daughter is suffering from [hives](symptom) and [hand cut](symptom)
+    - My wife is suffering from [itchy eyes](symptom) and [nasal bleeding](symptom)
+    - I don't feel well, I have [rash](symptom) and [arm redness](symptom)
+    - My daughter is suffering from [painful gums](symptom) and [neck ache or pain](symptom)
+    - My husband is suffering from [urinary retention](symptom) and [bleeding in brain](symptom)
+    - My husband is suffering from [drooping eyelid](symptom) and [leg numbness](symptom)
+    - I'm suffering from [hand cut](symptom) and [upper leg pain](symptom)
+    - I don't feel well, I have [maroon stools](symptom) and [insect sting](symptom)
+    - My wife is suffering from [rectal swelling](symptom) and [ingestion](symptom)
+    - For the last few days I have had [arm stiffness or tightness](symptom) and [weakness](symptom)
+    - I don't feel well, I have [retaining fluid](symptom) and [psychiatric problem](symptom)
+    - My child is suffering from [mouth swelling](symptom) and [agitated](symptom)
+    - I'm suffering from [skin itching](symptom) and [headache after trauma](symptom)
+    - My daughter is suffering from [vaginal bleeding after menopause](symptom) and [ear swelling](symptom)
+    - My son is suffering from [groin pain](symptom) and [leg numbness](symptom)
+    - My husband is suffering from [leg numbness](symptom) and [lower abdominal pain](symptom)
+    - My daughter is suffering from [low blood pressure](symptom) and [change in behavior](symptom)
+    - My son is suffering from [hand itching](symptom) and [abscess](symptom)
+    - I don't feel well, I have [shoulder stiffness or tightness](symptom) and [sneezing](symptom)
+    - My daughter is suffering from [leg ache or pain](symptom) and [mouth pain](symptom)
+    - I have really bad [facial droop](symptom) and [leg itching](symptom)
+    - My child is suffering from [skin swelling](symptom) and [fever of unknown origin](symptom)
+    - My daughter is suffering from [incontinence](symptom) and [stomach and abdominal pain](symptom)
+    - I'm suffering from [vaginal pain](symptom) and [muscle spasm](symptom)
+    - My child is suffering from [hip pain](symptom) and [arm cut](symptom)
+    - I have really bad [agitated](symptom) and [joint pain](symptom)
+    - My symptoms are [dementia](symptom) and [sore throat](symptom)
+    - My child is suffering from [dizziness](symptom) and [fever](symptom)
+    - For the last few days I have had [ear swelling](symptom) and [hives](symptom)
+    - I have really bad [vertigo](symptom) and [agitated](symptom)
+    - My husband is suffering from [toe pain](symptom) and [confusion](symptom)
+    - I don't feel well, I have [hand numbness](symptom) and [swollen lymph nodes](symptom)
+    - My symptoms are [skin infection](symptom) and [muscle spasm](symptom)
+    - My wife is suffering from [pustule](symptom) and [eye swelling](symptom)
+    - I have [low blood sugar](symptom) and [headache and weakness](symptom)
+    - My son is suffering from [excessive appetite](symptom) and [memory loss](symptom)
+    - My wife is suffering from [frequent urination](symptom) and [rectal pain](symptom)
+    - My daughter is suffering from [pelvic pain](symptom) and [low back ache or pain](symptom)
+    - My son is suffering from [cough](symptom) and [melena](symptom)
+    - My wife is suffering from [foot swelling](symptom) and [vaginal bleeding](symptom)
+    - My husband is suffering from [hot skin](symptom) and [bloody diarrhea](symptom)
+    - My daughter is suffering from [hand itching](symptom) and [vaginal pain](symptom)
+    - I'm suffering from [abdominal swelling](symptom) and [low heart rate](symptom)
+    - I'm suffering from [failure to thrive](symptom) and [dementia](symptom)
+    - I have really bad [speech problem](symptom) and [numbness](symptom)
+    - My symptoms are [wrist swelling](symptom) and [sore throat](symptom)
+    - My child is suffering from [agitated](symptom) and [ear swelling](symptom)
+    - I have really bad [headache and weakness](symptom) and [speech problem](symptom)
+    - My husband is suffering from [confusion](symptom) and [insect sting](symptom)
+    - I'm suffering from [skin pain](symptom) and [high blood sugar](symptom)
+    - My husband is suffering from [flatulence](symptom) and [swelling of both legs](symptom)
+    - My symptoms are [ingestion](symptom) and [melena](symptom)
+    - I have [cranky, crying, fussy, irritable child](symptom) and [unusual color or odor of urine](symptom)
+    - My child is suffering from [incontinence](symptom) and [urinary retention](symptom)
+    - My daughter is suffering from [depressed](symptom) and [jaw pain](symptom)
+    - For the last few days I have had [anger](symptom) and [snoring](symptom)
+    - For the last few days I have had [psychiatric problem](symptom) and [lip swelling](symptom)
+    - For the last few days I have had [difficulty breathing](symptom) and [loss of balance](symptom)
+    - My husband is suffering from [inconsolable baby](symptom) and [heat illness](symptom)
+    - My son is suffering from [dry skin](symptom) and [visual flashing lights](symptom)
+    - My husband is suffering from [calf pain](symptom) and [urinary retention](symptom)
+    - I have [jaundice](symptom) and [vertigo](symptom)
+    - My husband is suffering from [increased thirst](symptom) and [nail injury](symptom)
+    - My husband is suffering from [low blood pressure](symptom) and [vaginal discharge](symptom)
+    - I have [nasal injury](symptom) and [arm stiffness or tightness](symptom)
+    - My symptoms are [hip pain](symptom) and [hurts to breathe](symptom)
+    - My wife is suffering from [blood in urine](symptom) and [blood in urine](symptom)
+    - My son is suffering from [calf swelling](symptom) and [knee pain](symptom)
+    - My daughter is suffering from [increased facial hair](symptom) and [vomiting](symptom)
+    - I don't feel well, I have [cyanosis](symptom) and [heart murmur](symptom)
+    - I have really bad [urinary retention](symptom) and [insect sting](symptom)
+    - My son is suffering from [anxiety](symptom) and [wrist pain](symptom)
+    - I don't feel well, I have [heart murmur](symptom) and [shortness of breath](symptom)
+    - For the last few days I have had [head injury](symptom) and [heel pain](symptom)
+    - I don't feel well, I have [double vision](symptom) and [heart pulsations and palpitations](symptom)
+    - I don't feel well, I have [alcohol abuse](symptom) and [night sweats](symptom)
+    - My husband is suffering from [headache](symptom) and [liver failure](symptom)
+    - My wife is suffering from [mouth ulcers](symptom) and [blister](symptom)
+    - I'm suffering from [stings](symptom) and [joint pain](symptom)
+    - I don't feel well, I have [hives](symptom) and [back ache or pain](symptom)
+    - My husband is suffering from [drooping eyelid](symptom) and [skin pain](symptom)
+    - I have really bad [arm redness](symptom) and [pain or soreness of breast](symptom)
+    - For the last few days I have had [hot skin](symptom) and [weakness](symptom)
+    - I have [shoulder ache or pain](symptom) and [vaginal pain](symptom)
+    - My daughter is suffering from [neck swelling](symptom) and [stomach and abdominal pain](symptom)
+    - My daughter is suffering from [weakness](symptom) and [low blood pressure](symptom)
+    - My husband is suffering from [calf pain](symptom) and [increased urination](symptom)
+    - For the last few days I have had [spider bite](symptom) and [sneezing](symptom)
+    - My child is suffering from [arm itching](symptom) and [vaginal bleeding](symptom)
+    - I have really bad [swelling](symptom) and [low blood pressure](symptom)
+    - I don't feel well, I have [jaw pain](symptom) and [memory loss](symptom)
+    - I don't feel well, I have [painful rash](symptom) and [foot redness](symptom)
+    - I have really bad [hives](symptom) and [wrist pain](symptom)
+    - For the last few days I have had [abscess](symptom) and [pain in the ear](symptom)
+    - I have really bad [scrotal swelling](symptom) and [tongue swelling](symptom)
+    - My wife is suffering from [increased urination](symptom) and [stomach and abdominal pain](symptom)
+    - I have really bad [rash](symptom) and [nipple discharge](symptom)
+    - I have [toe pain](symptom), [psychiatric problem](symptom), and [drooling](symptom)
+    - My wife is suffering from [drooling](symptom), [seizure](symptom), and [shoulder ache or pain](symptom)
+    - For the last few days I have had [facial droop](symptom), [speech problem](symptom), and [hand, finger ache or pain](symptom)
+    - My daughter is suffering from [agitated](symptom), [increased urination](symptom), and [hand redness](symptom)
+    - For the last few days I have had [weakness](symptom), [cranky, crying, fussy, irritable child](symptom), and [cough](symptom)
+    - My wife is suffering from [fever](symptom), [hives](symptom), and [elbow ache or pain](symptom)
+    - My son is suffering from [skin trauma](symptom), [diarrhea](symptom), and [abdominal swelling](symptom)
+    - I don't feel well, I have [arm swelling](symptom), [pulling at ears](symptom), and [heat illness](symptom)
+    - I'm suffering from [incontinence](symptom), [foot itching](symptom), and [memory loss](symptom)
+    - My symptoms are [mouth ulcers](symptom), [bloody diarrhea](symptom), and [headache after trauma](symptom)
+    - My husband is suffering from [infertility](symptom), [hand cut](symptom), and [sweating](symptom)
+    - My child is suffering from [insomnia](symptom), [snoring](symptom), and [face numbness](symptom)
+    - My symptoms are [vaginal pain](symptom), [stomach and abdominal pain](symptom), and [impotence](symptom)
+    - My child is suffering from [skin pain](symptom), [hair loss](symptom), and [blurry vision](symptom)
+    - I don't feel well, I have [pulling at ears](symptom), [chest pain](symptom), and [delusions or hallucinations](symptom)
+    - I have really bad [sinus pain and pressure](symptom), [cough](symptom), and [toe pain](symptom)
+    - I don't feel well, I have [vomiting coffee ground material](symptom), [retaining fluid](symptom), and [lethargy](symptom)
+    - My son is suffering from [hot skin](symptom), [wrist pain](symptom), and [headache after trauma](symptom)
+    - My symptoms are [incontinence](symptom), [leg itching](symptom), and [penis inflammation or swelling](symptom)
+    - My child is suffering from [drooping eyelid](symptom), [blood in urine](symptom), and [hot flashes](symptom)
+    - I don't feel well, I have [impotence](symptom), [melena](symptom), and [psychiatric problem](symptom)
+    - I have really bad [elbow ache or pain](symptom), [stings](symptom), and [skin pain](symptom)
+    - I have [hot skin](symptom), [infertility](symptom), and [bleeding tendency](symptom)
+    - I have really bad [pain in the ear](symptom), [confusion](symptom), and [shin pain](symptom)
+    - My symptoms are [skin bumps](symptom), [infertility](symptom), and [learning difficulties](symptom)
+    - My symptoms are [arm stiffness or tightness](symptom), [muscle spasm](symptom), and [sneezing](symptom)
+    - I have [heat illness](symptom), [confusion and headache](symptom), and [joint pain](symptom)
+    - My symptoms are [shin pain](symptom), [low blood sugar](symptom), and [low blood pressure](symptom)
+    - My son is suffering from [rectal swelling](symptom), [increased facial hair](symptom), and [laceration](symptom)
+    - My wife is suffering from [skin trauma](symptom), [memory loss](symptom), and [abscess](symptom)
+    - My symptoms are [snoring](symptom), [swelling of both legs](symptom), and [insomnia](symptom)
+    - My husband is suffering from [skin infection](symptom), [blood in urine](symptom), and [confusion](symptom)
+    - I have really bad [hemoptysis](symptom), [impotence](symptom), and [painful urination](symptom)
+    - I don't feel well, I have [agitated](symptom), [mouth swelling](symptom), and [poisoning](symptom)
+    - My daughter is suffering from [delusions or hallucinations](symptom), [anger](symptom), and [vomiting](symptom)
+    - I have really bad [painful rash](symptom), [hair loss](symptom), and [blood in vomit](symptom)
+    - I have [fever in the returning traveler](symptom), [hives](symptom), and [high blood sugar](symptom)
+    - My daughter is suffering from [choking](symptom), [congestion in chest or lungs](symptom), and [vertigo](symptom)
+    - My son is suffering from [poisoning](symptom), [rectal pain](symptom), and [choking](symptom)
+    - My wife is suffering from [jaw pain](symptom), [painful rash](symptom), and [lethargy](symptom)
+    - My husband is suffering from [painful rash](symptom), [dark stools](symptom), and [depressed](symptom)
+    - My wife is suffering from [drooping eyelid](symptom), [frequent urination](symptom), and [dry skin](symptom)
+    - For the last few days I have had [low blood pressure](symptom), [vertigo](symptom), and [snoring](symptom)
+    - My wife is suffering from [fainting](symptom), [shoulder ache or pain](symptom), and [skin infection](symptom)
+    - My child is suffering from [shoulder ache or pain](symptom), [high blood pressure](symptom), and [tired](symptom)
+    - My child is suffering from [pain in the ear](symptom), [wrist swelling](symptom), and [fever in the returning traveler](symptom)
+    - My daughter is suffering from [confusion and headache](symptom), [heel pain](symptom), and [sneezing](symptom)
+    - My husband is suffering from [infertility](symptom), [excessive appetite](symptom), and [pelvic pain](symptom)
+    - For the last few days I have had [liver failure](symptom), [hip pain](symptom), and [kidney pain](symptom)
+    - My daughter is suffering from [dark stools](symptom), [hand numbness](symptom), and [pregnancy problem](symptom)
+    - My wife is suffering from [muscle pain](symptom), [eye pain](symptom), and [pelvic pain](symptom)
+    - My husband is suffering from [vaginal discharge](symptom), [frequent urination](symptom), and [fever of unknown origin](symptom)
+    - For the last few days I have had [arm numbness](symptom), [substance abuse](symptom), and [pustule](symptom)
+    - My husband is suffering from [rash](symptom), [ear pressure](symptom), and [facial droop](symptom)
+    - I have [vaginal bleeding](symptom), [shortness of breath](symptom), and [steatorrhea](symptom)
+    - I have really bad [neck swelling](symptom), [nasal bleeding](symptom), and [depressed](symptom)
+    - My child is suffering from [melena](symptom), [drooping eyelid](symptom), and [hand itching](symptom)
+    - I don't feel well, I have [shoulder stiffness or tightness](symptom), [heat illness](symptom), and [shin pain](symptom)
+    - I have [behavioral problem](symptom), [hurts to breathe](symptom), and [suicidal tendencies](symptom)
+    - I have really bad [arm cut](symptom), [hip pain](symptom), and [dry skin](symptom)
+    - My daughter is suffering from [eye pain](symptom), [abdominal swelling](symptom), and [mouth pain](symptom)
+    - My daughter is suffering from [wrist swelling](symptom), [itchy rash](symptom), and [laceration](symptom)
+    - My symptoms are [puncture wound](symptom), [joint pain](symptom), and [hand numbness](symptom)
+    - My son is suffering from [lump or mass of breast](symptom), [toe pain](symptom), and [ankle pain](symptom)
+    - I have [groin pain](symptom), [heart pulsations and palpitations](symptom), and [wrist pain](symptom)
+    - My daughter is suffering from [general weakness](symptom), [fever](symptom), and [vaginal itching](symptom)
+    - My symptoms are [foot cut](symptom), [lower abdominal pain](symptom), and [vaginal bleeding](symptom)
+    - I have [fainting](symptom), [rash](symptom), and [leg itching](symptom)
+    - My wife is suffering from [neck swelling](symptom), [upper abdominal pain](symptom), and [dry skin](symptom)
+    - My wife is suffering from [mouth pain](symptom), [anger](symptom), and [calf swelling](symptom)
+    - My symptoms are [vaginal itching](symptom), [dry skin](symptom), and [eye floaters](symptom)
+    - My child is suffering from [neck ache or pain](symptom), [agitated](symptom), and [darkening of the skin](symptom)
+    - I have really bad [sleep disorders](symptom), [substance abuse](symptom), and [amenorrhea](symptom)
+    - I'm suffering from [headache after trauma](symptom), [shoulder ache or pain](symptom), and [traveler's diarrhea](symptom)
+    - For the last few days I have had [low blood pressure](symptom), [wrist pain](symptom), and [nasal congestion](symptom)
+    - My symptoms are [blood in urine](symptom), [upper abdominal pain](symptom), and [foot itching](symptom)
+    - My husband is suffering from [toe pain](symptom), [insomnia](symptom), and [weight loss, unexplained](symptom)
+    - I'm suffering from [stings](symptom), [bleeding in brain](symptom), and [joint stiffness](symptom)
+    - I have really bad [hand, finger ache or pain](symptom), [jaundice](symptom), and [loss of balance](symptom)
+    - My husband is suffering from [neck swelling](symptom), [low blood pressure](symptom), and [loss of balance](symptom)
+    - For the last few days I have had [jaundice](symptom), [high blood sugar](symptom), and [heat illness](symptom)
+    - My daughter is suffering from [arm ache or pain](symptom), [excessive appetite](symptom), and [ingestion](symptom)
+    - I don't feel well, I have [sore throat](symptom), [liver failure](symptom), and [double vision](symptom)
+    - My daughter is suffering from [headache](symptom), [insomnia](symptom), and [insomnia](symptom)
+    - I have really bad [skin pain](symptom), [steatorrhea](symptom), and [shoulder ache or pain](symptom)
+    - My daughter is suffering from [head injury](symptom), [swollen lymph nodes](symptom), and [foot itching](symptom)
+    - My symptoms are [flatulence](symptom), [throat pain](symptom), and [constipation](symptom)
+    - My wife is suffering from [swelling of both legs](symptom), [wrist pain](symptom), and [delusions or hallucinations](symptom)
+    - I have [nasal injury](symptom), [increased urination](symptom), and [hemoptysis](symptom)
+    - I don't feel well, I have [laceration](symptom), [bleeding in brain](symptom), and [nail injury](symptom)
+    - For the last few days I have had [puncture wound](symptom), [mouth ulcers](symptom), and [hand numbness](symptom)
+    - My child is suffering from [unsteady gait](symptom), [mouth swelling](symptom), and [calf swelling](symptom)
+    - My daughter is suffering from [ingestion](symptom), [numbness](symptom), and [anger](symptom)
+    - My wife is suffering from [hurts to breathe](symptom), [knee pain](symptom), and [swollen lymph nodes](symptom)
+    - For the last few days I have had [confusion](symptom), [hip pain](symptom), and [trauma](symptom)
+    - My son is suffering from [tremors](symptom), [elbow ache or pain](symptom), and [leg numbness](symptom)
+    - My wife is suffering from [eye swelling](symptom), [joint pain](symptom), and [night sweats](symptom)
+    - My husband is suffering from [spider bite](symptom), [swallowing problem](symptom), and [skin trauma](symptom)
+    - My wife is suffering from [wrist pain](symptom), [weakness](symptom), and [sweating](symptom)
+    - My child is suffering from [pustule](symptom), [calf swelling](symptom), and [nasal congestion](symptom)
+    - My son is suffering from [toe pain](symptom), [muscle pain](symptom), [change in behavior](symptom), [painful urination](symptom)
+    - My wife is suffering from [scrotal pain](symptom), [drooling](symptom), [limping in a child](symptom), [hip pain](symptom)
+    - My wife is suffering from [bleeding tendency](symptom), [snoring](symptom), [impotence](symptom), [unusual color or odor of urine](symptom)
+    - My son is suffering from [painful gums](symptom), [eye pain](symptom), [chest pressure](symptom), [blood in urine](symptom)
+    - My wife is suffering from [facial droop](symptom), [penis inflammation or swelling](symptom), [foot pain](symptom), [sinus pain and pressure](symptom)
+    - My child is suffering from [back ache or pain](symptom), [skin pain](symptom), [general weakness](symptom), [cyanosis](symptom)
+    - My son is suffering from [heel pain](symptom), [spider bite](symptom), [heel pain](symptom), [darkening of the skin](symptom)
+    - For the last few days I have had [skin pain](symptom), [dry skin](symptom), [dizziness](symptom), [skin bumps](symptom)
+    - My symptoms are [skin pain](symptom), [upper leg pain](symptom), [anger](symptom), [skin bumps](symptom)
+    - I don't feel well, I have [vomiting coffee ground material](symptom), [neck stiffness or tightness](symptom), [weight loss, unexplained](symptom), [head injury](symptom)
+    - My son is suffering from [drooling](symptom), [leg numbness](symptom), [heat illness](symptom), [memory loss](symptom)
+    - For the last few days I have had [low heart rate](symptom), [dizziness](symptom), [skin swelling](symptom), [facial droop](symptom)
+    - My symptoms are [congestion in chest or lungs](symptom), [amenorrhea](symptom), [high blood pressure](symptom), [dementia](symptom)
+    - For the last few days I have had [vertigo](symptom), [back ache or pain](symptom), [hemoptysis](symptom), [drooping eyelid](symptom)
+    - My daughter is suffering from [mouth swelling](symptom), [penis pain](symptom), [drooping eyelid](symptom), [stings](symptom)
+    - My child is suffering from [vaginal bleeding](symptom), [vertigo](symptom), [sneezing](symptom), [nasal bleeding](symptom)
+    - My husband is suffering from [visual problems](symptom), [armpit pain](symptom), [joint pain](symptom), [general weakness](symptom)
+    - My wife is suffering from [drooping eyelid](symptom), [pelvic pain](symptom), [drooping eyelid](symptom), [eye pain](symptom)
+    - My daughter is suffering from [neck swelling](symptom), [jaw pain](symptom), [vaginal bleeding during pregnancy](symptom), [skin infection](symptom)
+    - For the last few days I have had [eye swelling](symptom), [change in behavior](symptom), [drooping eyelid](symptom), [eye floaters](symptom)
+    - My son is suffering from [change in behavior](symptom), [sweating](symptom), [dizziness](symptom), [hand redness](symptom)
+    - My symptoms are [fever of unknown origin](symptom), [steatorrhea](symptom), [low heart rate](symptom), [dizziness](symptom)
+    - My son is suffering from [painful gums](symptom), [excessive appetite](symptom), [calf pain](symptom), [low blood sugar](symptom)
+    - My child is suffering from [foot itching](symptom), [urinary retention](symptom), [puncture wound](symptom), [elbow swelling](symptom)
+    - My wife is suffering from [anger](symptom), [retaining fluid](symptom), [rectal pain](symptom), [general weakness](symptom)
+    - My wife is suffering from [nail injury](symptom), [skin trauma](symptom), [pain or soreness of breast](symptom), [nausea](symptom)
+    - For the last few days I have had [trauma](symptom), [pain or soreness of breast](symptom), [pustule](symptom), [swelling](symptom)
+    - My symptoms are [infertility](symptom), [muscle pain](symptom), [painful urination](symptom), [sore throat](symptom)
+    - I have [laceration](symptom), [abscess](symptom), [hip pain](symptom), [wrist swelling](symptom)
+    - I don't feel well, I have [snoring](symptom), [wheezing](symptom), [arm swelling](symptom), [wrist pain](symptom)
+    - I have [infertility](symptom), [ear swelling](symptom), [lip swelling](symptom), [stomach and abdominal pain](symptom)
+    - My husband is suffering from [facial pain](symptom), [leg itching](symptom), [stings](symptom), [leg cut](symptom)
+    - For the last few days I have had [bleeding gums](symptom), [abdominal swelling](symptom), [abscess](symptom), [arm numbness](symptom)
+    - My symptoms are [calf pain](symptom), [calf pain](symptom), [scrotal pain](symptom), [hand, finger ache or pain](symptom)
+    - I don't feel well, I have [hot skin](symptom), [drooping eyelid](symptom), [chest burning](symptom), [elbow swelling](symptom)
+    - For the last few days I have had [elbow ache or pain](symptom), [headache](symptom), [jaw pain](symptom), [mouth swelling](symptom)
+    - My daughter is suffering from [flatulence](symptom), [hip pain](symptom), [flank pain](symptom), [tooth pain](symptom)
+    - I have really bad [swallowing problem](symptom), [nausea](symptom), [arm swelling](symptom), [leg itching](symptom)
+    - I have [abscess](symptom), [psychiatric problem](symptom), [low back ache or pain](symptom), [nasal injury](symptom)
+    - My symptoms are [itchy rash](symptom), [snoring](symptom), [jaw pain](symptom), [anger](symptom)
+    - My son is suffering from [scrotal swelling](symptom), [infertility](symptom), [swollen gums](symptom), [penis pain](symptom)
+    - My symptoms are [throat pain](symptom), [leg numbness](symptom), [skin itching](symptom), [cyanosis](symptom)
+    - I don't feel well, I have [knee pain](symptom), [leg itching](symptom), [skin bumps](symptom), [bleeding in brain](symptom)
+    - My wife is suffering from [leg ache or pain](symptom), [increased facial hair](symptom), [loss of balance](symptom), [speech problem](symptom)
+    - My wife is suffering from [painful urination](symptom), [nail injury](symptom), [head injury](symptom), [arm ache or pain](symptom)
+    - My son is suffering from [bleeding tendency](symptom), [psychiatric problem](symptom), [groin pain](symptom), [vaginal itching](symptom)
+    - I have [swollen lymph nodes](symptom), [flatulence](symptom), [nausea](symptom), [foot cut](symptom)
+    - My child is suffering from [snoring](symptom), [increased facial hair](symptom), [skin pain](symptom), [vaginal bleeding after menopause](symptom)
+    - I have [heart pulsations and palpitations](symptom), [retaining fluid](symptom), [liver failure](symptom), [vaginal itching](symptom)
+    - My child is suffering from [headache after trauma](symptom), [arm cut](symptom), [loss of balance](symptom), [leg numbness](symptom)
+    - My child is suffering from [muscle pain](symptom), [memory loss](symptom), [tired](symptom), [memory loss](symptom)
+    - I'm suffering from [neck swelling](symptom), [itchy rash](symptom), [hurts to breathe](symptom), [dizziness](symptom)
+    - My husband is suffering from [skin itching](symptom), [toe pain](symptom), [heel pain](symptom), [lethargy](symptom)
+    - I'm suffering from [hand redness](symptom), [spider bite](symptom), [puncture wound](symptom), [stomach and abdominal pain](symptom)
+    - I have [snake bite](symptom), [steatorrhea](symptom), [headache and weakness](symptom), [foot cut](symptom)
+    - My son is suffering from [sleep disorders](symptom), [facial droop](symptom), [anger](symptom), [agitated](symptom)
+    - I have really bad [bleeding tendency](symptom), [blood in urine](symptom), [impotence](symptom), [double vision](symptom)
+    - My wife is suffering from [muscle pain](symptom), [memory loss](symptom), [stomach and abdominal pain](symptom), [amenorrhea](symptom)
+    - My wife is suffering from [substance abuse](symptom), [memory loss](symptom), [visual flashing lights](symptom), [general weakness](symptom)
+    - My husband is suffering from [heat illness](symptom), [trauma](symptom), [sore throat](symptom), [drooling](symptom)
+    - My wife is suffering from [congestion in chest or lungs](symptom), [groin pain](symptom), [snoring](symptom), [painful rash](symptom)
+    - My wife is suffering from [liver failure](symptom), [blurry vision](symptom), [upper abdominal pain](symptom), [confusion](symptom)
+    - I have [itchy eyes](symptom), [dry skin](symptom), [substance abuse](symptom), [flank pain](symptom)
+    - I don't feel well, I have [hoarse voice](symptom), [heel pain](symptom), [drooping eyelid](symptom), [penis pain](symptom)
+    - For the last few days I have had [facial droop](symptom), [shoulder stiffness or tightness](symptom), [headache](symptom), [hand itching](symptom)
+    - I have [frequent urination](symptom), [unsteady gait](symptom), [penile discharge](symptom), [maroon stools](symptom)
+    - My wife is suffering from [darkening of the skin](symptom), [depressed](symptom), [kidney pain](symptom), [fever of unknown origin](symptom)
+    - I'm suffering from [agitated](symptom), [anger](symptom), [swelling](symptom), [lip swelling](symptom)
+    - I have [hurts to breathe](symptom), [visual flashing lights](symptom), [arm stiffness or tightness](symptom), [arm stiffness or tightness](symptom)
+    - My wife is suffering from [hand cut](symptom), [throat pain](symptom), [excessive appetite](symptom), [ankle pain](symptom)
+    - My symptoms are [jaundice](symptom), [heat illness](symptom), [limping in a child](symptom), [change in behavior](symptom)
+    - I have really bad [blister](symptom), [throat pain](symptom), [mouth swelling](symptom), [bleeding tendency](symptom)
+    - My daughter is suffering from [psychiatric problem](symptom), [steatorrhea](symptom), [pregnancy problem](symptom), [failure to thrive](symptom)
+    - My wife is suffering from [sinus pain and pressure](symptom), [increased thirst](symptom), [skin bumps](symptom), [hand, finger ache or pain](symptom)
+    - I don't feel well, I have [jaundice](symptom), [nasal bleeding](symptom), [chest pain](symptom), [hand itching](symptom)
+    - I don't feel well, I have [vaginal discharge](symptom), [hand cut](symptom), [lethargy](symptom), [numbness](symptom)
+    - I don't feel well, I have [substance abuse](symptom), [chest pressure](symptom), [bleeding tendency](symptom), [leg ache or pain](symptom)
+    - My wife is suffering from [itchy eyes](symptom), [rash](symptom), [chest pressure](symptom), [nipple discharge](symptom)
+    - I'm suffering from [dark stools](symptom), [flank pain](symptom), [arm redness](symptom), [tired](symptom)
+    - My husband is suffering from [stomach and abdominal pain](symptom), [elbow ache or pain](symptom), [leg redness](symptom), [delusions or hallucinations](symptom)
+    - My son is suffering from [knee pain](symptom), [neck swelling](symptom), [hand numbness](symptom), [calf swelling](symptom)
+    - My symptoms are [learning difficulties](symptom), [eye pain](symptom), [hand, finger ache or pain](symptom), [calf swelling](symptom)
+    - I don't feel well, I have [flatulence](symptom), [eye redness](symptom), [frequent urination](symptom), [alcohol abuse](symptom)
+    - For the last few days I have had [muscle spasm](symptom), [painful rash](symptom), [wrist swelling](symptom), [vaginal bleeding](symptom)
+    - I'm suffering from [psychiatric problem](symptom), [vaginal discharge](symptom), [hemoptysis](symptom), [alcohol abuse](symptom)
+    - For the last few days I have had [eye swelling](symptom), [learning difficulties](symptom), [chest pressure](symptom), [traveler's diarrhea](symptom)
+    - I'm suffering from [weakness](symptom), [hand itching](symptom), [skin trauma](symptom), [skin swelling](symptom)
+    - I don't feel well, I have [dizziness](symptom), [nasal injury](symptom), [cough](symptom), [insect sting](symptom)
+    - My symptoms are [overdose](symptom), [skin growths](symptom), [confusion](symptom), [elbow ache or pain](symptom)
+    - My son is suffering from [rash](symptom), [painful gums](symptom), [alcohol abuse](symptom), [penis inflammation or swelling](symptom)
+    - For the last few days I have had [tired](symptom), [armpit pain](symptom), [vomiting](symptom), [vomiting](symptom)
+    - My wife is suffering from [bleeding tendency](symptom), [double vision](symptom), [foot itching](symptom), [behavioral problem](symptom)
+    - My daughter is suffering from [obesity](symptom), [neck ache or pain](symptom), [maroon stools](symptom), [heel pain](symptom)
+    - My son is suffering from [impotence](symptom), [high blood sugar](symptom), [drooling](symptom), [sore throat](symptom)
+    - My son is suffering from [bloody diarrhea](symptom), [leg itching](symptom), [calf swelling](symptom), [leg redness](symptom)
+    - My wife is suffering from [suicidal tendencies](symptom), [flatulence](symptom), [skin swelling](symptom), [limping in a child](symptom)
+    - My wife is suffering from [heel pain](symptom), [behavioral problem](symptom), [depressed](symptom), [darkening of the skin](symptom)
+    - I'm suffering from [penis pain](symptom), [flatulence](symptom), [infertility](symptom), [scrotal pain](symptom)
+    - My child is suffering from [itchy rash](symptom), [wrist swelling](symptom), [vaginal bleeding during pregnancy](symptom), [steatorrhea](symptom)
+    - My wife is suffering from [poisoning](symptom), [swallowing problem](symptom), [hives](symptom), [foot redness](symptom)
